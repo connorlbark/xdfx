@@ -1,0 +1,3 @@
+[submodule "third_party/Simple-FFT"]
+	path = third_party/Simple-FFT
+	url = https://github.com/d1vanov/Simple-FFT
