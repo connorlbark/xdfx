@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
   55              		.align	1
   56              		.weak	_hook_param
   57              		.thumb
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 2
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 2
 
 
   58              		.thumb_func
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  112              		.cfi_startproc
  113              		@ args = 0, pretend = 0, frame = 0
  114              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 3
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 3
 
 
  115              	.LVL3:
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  169              		.loc 1 109 0 discriminator 2
  170 003a 0135     		adds	r5, r5, #1
  171              	.LVL12:
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 4
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 4
 
 
  172 003c F7E7     		b	.L9
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  221 0000 59050000 		.4byte	0x559
  222 0004 0400     		.2byte	0x4
  223 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 5
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 5
 
 
  224 000a 04       		.byte	0x4
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  278 0079 07       		.byte	0x7
  279 007a 89030000 		.4byte	.LASF10
  280 007e 04       		.uleb128 0x4
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 6
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 6
 
 
  281 007f 04       		.byte	0x4
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  335 00e8 05       		.byte	0x5
  336 00e9 35       		.byte	0x35
  337 00ea 13010000 		.4byte	0x113
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 7
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 7
 
 
  338 00ee 08       		.uleb128 0x8
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  392 0160 3D020000 		.4byte	.LASF34
  393 0164 00010100 		.4byte	0x10100
  394 0168 00       		.byte	0
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 8
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 8
 
 
  395 0169 03       		.uleb128 0x3
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  449 01e1 03       		.uleb128 0x3
  450 01e2 B8020000 		.4byte	.LASF39
  451 01e6 06       		.byte	0x6
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 9
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 9
 
 
  452 01e7 59       		.byte	0x59
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  506 0256 FE020000 		.4byte	.LASF45
  507 025a 06       		.byte	0x6
  508 025b 66       		.byte	0x66
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 10
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 10
 
 
  509 025c 8A010000 		.4byte	0x18a
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  563 02ce DF030000 		.4byte	.LASF51
  564 02d2 01       		.byte	0x1
  565 02d3 3C       		.byte	0x3c
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 11
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 11
 
 
  566 02d4 CD000000 		.4byte	0xcd
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  620 033d 02000000 		.4byte	.LFB232
  621 0341 02000000 		.4byte	.LFE232-.LFB232
  622 0345 01       		.uleb128 0x1
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 12
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 12
 
 
  623 0346 9C       		.byte	0x9c
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  677 03b2 52000000 		.4byte	.LFE228-.LFB228
  678 03b6 01       		.uleb128 0x1
  679 03b7 9C       		.byte	0x9c
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 13
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 13
 
 
  680 03b8 4A040000 		.4byte	0x44a
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  734 043d 01       		.uleb128 0x1
  735 043e 50       		.byte	0x50
  736 043f 02       		.uleb128 0x2
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 14
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 14
 
 
  737 0440 77       		.byte	0x77
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  791 04b0 00       		.byte	0
  792 04b1 24       		.uleb128 0x24
  793 04b2 1D030000 		.4byte	.LASF69
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 15
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 15
 
 
  794 04b6 07       		.byte	0x7
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  848 0535 01       		.byte	0x1
  849 0536 36       		.byte	0x36
  850 0537 8C000000 		.4byte	0x8c
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 16
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 16
 
 
  851 053b 11       		.uleb128 0x11
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  905 0024 0B       		.uleb128 0xb
  906 0025 3B       		.uleb128 0x3b
  907 0026 0B       		.uleb128 0xb
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 17
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 17
 
 
  908 0027 49       		.uleb128 0x49
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  962 005d 00       		.byte	0
  963 005e 09       		.uleb128 0x9
  964 005f 28       		.uleb128 0x28
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 18
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 18
 
 
  965 0060 00       		.byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1019 0096 0F       		.uleb128 0xf
  1020 0097 0D       		.uleb128 0xd
  1021 0098 00       		.byte	0
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 19
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 19
 
 
  1022 0099 03       		.uleb128 0x3
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1076 00cf 3B       		.uleb128 0x3b
  1077 00d0 0B       		.uleb128 0xb
  1078 00d1 27       		.uleb128 0x27
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 20
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 20
 
 
  1079 00d2 19       		.uleb128 0x19
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1133 0109 40       		.uleb128 0x40
  1134 010a 18       		.uleb128 0x18
  1135 010b 9742     		.uleb128 0x2117
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 21
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 21
 
 
  1136 010d 19       		.uleb128 0x19
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1190 0144 02       		.uleb128 0x2
  1191 0145 17       		.uleb128 0x17
  1192 0146 00       		.byte	0
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 22
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 22
 
 
  1193 0147 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1247 017d 00       		.byte	0
  1248 017e 1E       		.uleb128 0x1e
  1249 017f 34       		.uleb128 0x34
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 23
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 23
 
 
  1250 0180 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1304 01bb 3B       		.uleb128 0x3b
  1305 01bc 0B       		.uleb128 0xb
  1306 01bd 49       		.uleb128 0x49
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 24
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 24
 
 
  1307 01be 13       		.uleb128 0x13
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1361              		.section	.debug_loc,"",%progbits
  1362              	.Ldebug_loc0:
  1363              	.LLST0:
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 25
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 25
 
 
  1364 0000 0A000000 		.4byte	.LVL3-.Ltext0
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1418 007f 00000000 		.4byte	0
  1419 0083 00000000 		.4byte	0
  1420              	.LLST3:
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 26
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 26
 
 
  1421 0087 22000000 		.4byte	.LVL7-.Ltext0
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1464              	.LASF17:
  1465 002a 73697A65 		.ascii	"sizetype\000"
  1465      74797065 
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 27
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 27
 
 
  1465      00
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1486      6E203234 
  1486      30343936 
  1487 012c 7468756D 		.ascii	"thumb-interwork -mlittle-endian -mfloat-abi=hard -m"
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 28
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 28
 
 
  1487      622D696E 
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1508              	.LASF46:
  1509 0262 66756E63 		.ascii	"func_suspend\000"
  1509      5F737573 
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 29
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 29
 
 
  1509      70656E64 
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1533 0313 5F5F7569 		.ascii	"__uint8_t\000"
  1533      6E74385F 
  1533      7400
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 30
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 30
 
 
  1534              	.LASF69:
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1557 03bc 756E7369 		.ascii	"unsigned int\000"
  1557      676E6564 
  1557      20696E74 
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 31
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 31
 
 
  1557      00
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1581      727900
  1582              	.LASF47:
  1583 0471 66756E63 		.ascii	"func_resume\000"
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 32
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 32
 
 
  1583      5F726573 
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1607      66785F68 
  1607      6F6F6B5F 
  1607      7461626C 
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 33
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 33
 
 
  1608              	.LASF5:
@@ -1972,21 +1972,21 @@ ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 1
  1627      655F6465 
  1627      6C667800 
  1628              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160919 (release) [ARM/embedded-5-bran
-ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s 			page 34
+ARM GAS  /var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 _unit.c
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:21     .text:0000000000000000 $t
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:26     .text:0000000000000000 _hook_process
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:44     .text:0000000000000002 _hook_resume
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:60     .text:0000000000000004 _hook_param
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:77     .text:0000000000000006 _hook_suspend
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:92     .text:0000000000000008 _hook_init
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:109    .text:000000000000000a _entry
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:185    .text:000000000000004c $d
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:195    .hooks:0000000000000000 s_hook_table
-/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccTq43Rv.s:203    .hooks:000000000000000a $d
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:21     .text:0000000000000000 $t
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:26     .text:0000000000000000 _hook_process
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:44     .text:0000000000000002 _hook_resume
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:60     .text:0000000000000004 _hook_param
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:77     .text:0000000000000006 _hook_suspend
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:92     .text:0000000000000008 _hook_init
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:109    .text:000000000000000a _entry
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:185    .text:000000000000004c $d
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:195    .hooks:0000000000000000 s_hook_table
+/var/folders/lp/91fb3m410_x3145lb4m2f_fh0000gn/T//ccRIg0sN.s:203    .hooks:000000000000000a $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

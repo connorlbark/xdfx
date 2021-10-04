@@ -5,10 +5,8 @@
 #ifndef STDFX_REVERB_FX_MAIN_H
 #define STDFX_REVERB_FX_MAIN_H
 
-#include <include/Reverb.h>
-#include <memory>
-#include "userrevfx.h"
+#include "include/Reverb.h"
 
-std::unique_ptr<Reverb> generateReverb();
+Reverb * generateReverb();
 
 #endif //STDFX_REVERB_FX_MAIN_H

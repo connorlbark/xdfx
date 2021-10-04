@@ -3,8 +3,9 @@
 //
 
 #include "reverb_fx_main.h"
+#include "userrevfx.h"
 
-std::unique_ptr<Reverb> verb;
+Reverb *verb;
 
 void REVFX_INIT(uint32_t platform, uint32_t api) {
     verb = generateReverb();

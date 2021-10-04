@@ -5,10 +5,6 @@
 #ifndef STDFX_BUFFER_H
 #define STDFX_BUFFER_H
 
-#include <vector>
-#include <list>
-#include <iostream>
-#include <cstdlib>
 #include "float_math.h"
 
 struct buf_f32pair_t : f32pair_t {
