@@ -12,14 +12,10 @@ All that needs to be changed to compile an effect is in `project.mk`.
 
 First, set the path to minilogue-xd platform folder in the logue-sdk as `PLATFORMDIR`.
 
-### FAQ
+Next, set which effect you want to compile at `EFFECT`. Check if there are any
+settings you want to change in the effect's parameters.
 
-#### Why does MODFX_PROCESS() have *main* and *sub* inputs and outputs?
-
-The modulation effect API was originally designed for the prologue synthesizer which allows each *main* and *sub* timbre
-audio to be processed independently by the modulation effect section. This interface was maintained in order to preserve
-API compatibility between the minilogue xd and prologue. For an effect to properly work on the prologue, both inputs
-should be processed in the same way and the result written to the corresponding output.
+Finally, run `make all`.
 
 ## Setting Up
 
