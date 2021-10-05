@@ -6,7 +6,7 @@
 #define STDFX_FILTER_H
 
 #include <cstdint>
-#include "Effect.h"
+#include "ModEffect.h"
 
 class Filter : public Effect {
 public:

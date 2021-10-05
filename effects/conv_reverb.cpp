@@ -1,5 +1,5 @@
 #include "include/ConvReverb.h"
-#include "reverb_fx_main.h"
+#include "effects/entrypoints/reverb_fx_main.h"
 #include CONV_REVERB_H
 
 

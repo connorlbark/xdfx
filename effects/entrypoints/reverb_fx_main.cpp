@@ -19,14 +19,14 @@ void REVFX_PROCESS(float *main_xn,
 void REVFX_PARAM(uint8_t index, uint32_t value) {
 
     if (index == k_user_revfx_param_time) {
-        verb->setTime(value);
+        verb->setTime(float(value)/1024.f);
     }
 
     if (index == k_user_revfx_param_depth) {
-        verb->setDepth(value);
+        verb->setDepth(float(value)/1024.f);
     }
 
     if (index == k_user_revfx_param_shift_depth) {
-        verb->setDryWet(value);
+        verb->setDryWet(float(value)/1024.f);
     }
 }

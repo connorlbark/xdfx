@@ -10,13 +10,14 @@ THIRDPARTYLIBS = third_party/Simple-FFT/include
 EFFECT = 1
 # 0 = Comb Filter
 # 1 = Convolution Reverb (set CONV_REVERB_PATH to the impulse response you'd like to embed)
+# 2 = Distortion
 
 ifeq ($(EFFECT),0)
 	PROJECT = comb
 
 	UCSRC = # c source files
 
-	UCXXSRC = comb.cpp src/filters/CombFilter.cpp src/Filter.cpp effect_fx_main.cpp src/mathops.cpp # c++11 source files
+	UCXXSRC = effects/comb.cpp src/filters/CombFilter.cpp src/Filter.cpp effects/entrypoints/effect_fx_main.cpp src/mathops.cpp # c++11 source files
 
 	MANIFEST = manifests/comb.json
 endif
@@ -26,11 +27,21 @@ ifeq ($(EFFECT),1)
 
 	UCSRC = # c source files
 
-	UCXXSRC = conv_reverb.cpp src/ConvReverb.cpp src/Reverb.cpp reverb_fx_main.cpp # c++11 source files
+	UCXXSRC = effects/conv_reverb.cpp src/ConvReverb.cpp src/Reverb.cpp effects/entrypoints/reverb_fx_main.cpp # c++11 source files
 
 	MANIFEST = manifests/conv_reverb.json
 
 	CONV_REVERB_PATH = rev_ir/example.h
+endif
+
+ifeq ($(EFFECT),2)
+	PROJECT = basic_distortion
+
+	UCSRC = # c source files
+
+	UCXXSRC = effects/basic_distortion.cpp src/ChebyshevDistortion.cpp src/Effect.cpp effects/entrypoints/mod_fx_main.cpp # c++11 source files
+
+	MANIFEST = manifests/basic_distortion.json
 endif
 
 UINCDIR = # header search paths

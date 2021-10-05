@@ -7,13 +7,13 @@
 
 #include <cstdint>
 
-class Effect {
+class ModEffect {
 public:
     virtual void tick(const float *in, float *out, uint32_t length) = 0;
 
-    virtual void setTime(uint32_t val) = 0;
+    virtual void setTime(float val) = 0;
 
-    virtual void setDepth(uint32_t val) = 0;
+    virtual void setDepth(float val) = 0;
 };
 
 
