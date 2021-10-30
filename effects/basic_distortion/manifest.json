@@ -1,12 +1,12 @@
 {
   "header": {
     "platform": "minilogue-xd",
-    "module": "conv_reverb",
+    "module": "modfx",
     "api": "1.1-0",
     "dev_id": 0,
     "prg_id": 0,
     "version": "0.1-0",
-    "name": "Convolution Reverb",
+    "name": "Distortion",
     "num_param": 0
   }
 }

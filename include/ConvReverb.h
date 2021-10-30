@@ -19,6 +19,13 @@ private:
     Buffer<buf_f32pair_t> impulseResponse;
     Buffer<float> history;
     Buffer<buf_f32pair_t> fft_buf;
+private:
+    /**
+     * Get FFT of history and put the last _length_ samples to the output array
+     * @param out The output array
+     * @param length The number of samples to place in the output array
+     */
+    void apply_reverb(float *out, uint32_t length);
 public:
     /**
      * Initializes the convolution reverb.
@@ -28,7 +35,9 @@ public:
      * @param fft_buf Empty buffer which has the same length as the impulse response; acts as a buffer for computing the
      *                reverb.
      */
-    ConvReverb(Buffer<buf_f32pair_t> impulseResponse, Buffer<float> history, Buffer<buf_f32pair_t> fft_buf);
+    ConvReverb();
+
+    void set_memory(buf_f32pair_t *ir, float *history, buf_f32pair_t *fft_but, int length);
 
     /**
      * Compute the reverb.
@@ -37,6 +46,7 @@ public:
      * @param length Length of the array.
      */
     void tick(float *inout, uint32_t length) override;
+
 
 };
 

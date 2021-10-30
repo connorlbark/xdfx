@@ -7,7 +7,7 @@ PLATFORMDIR = ../logue-sdk/platform/minilogue-xd
 
 THIRDPARTYLIBS = third_party/Simple-FFT/include
 
-EFFECT = 1
+EFFECT = 2
 # 0 = Comb Filter
 # 1 = Convolution Reverb (set CONV_REVERB_PATH to the impulse response you'd like to embed)
 # 2 = Distortion
@@ -44,9 +44,9 @@ ifeq ($(EFFECT),2)
 
 	UCSRC = # c source files
 
-	UCXXSRC = effects/basic_distortion.cpp src/ChebyshevDistortion.cpp src/Effect.cpp effects/entrypoints/mod_fx_main.cpp # c++11 source files
+	UCXXSRC = effects/basic_distortion.cpp src/ChebyshevDistortion.cpp src/Effect.cpp # c++11 source files
 
-	MANIFEST = manifests/basic_distortion.json
+	MANIFEST = effects/basic_distortion/manifest.json
 endif
 
 UINCDIR = # header search paths
