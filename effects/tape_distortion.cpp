@@ -2,25 +2,15 @@
 // Created by Connor Barker on 10/5/21.
 //
 
-#include "../include/ChebyshevDistortion.h"
+#include "../include/SigmoidDistortion.h"
 #include "usermodfx.h"
 
-#define COEFFLENGTH 10
-static __sdram float coefficients[COEFFLENGTH];
-static ChebyshevDistortion distortion{coefficients, COEFFLENGTH};
+#define HISTLENGTH 10
+static __sdram float history[HISTLENGTH];
+static SigmoidDistortion distortion{history, HISTLENGTH};
 
 void MODFX_INIT(uint32_t platform, uint32_t api) {
 
-    coefficients[0] = 1.f;
-    coefficients[1] = 0.33f;
-    coefficients[2] = 0.2f;
-    coefficients[3] = 0.1f;
-    coefficients[4] = 0.1f;
-    coefficients[5] = 0.05f;
-    coefficients[6] = 0.05f;
-    coefficients[7] = 0.000f;
-    coefficients[8] = 0.000f;
-    coefficients[9] = 0.000f;
 
 }
 
