@@ -7,39 +7,43 @@
 
 #include "ModEffect.h"
 #include "float_math.h"
+#include "utils/Buffer.h"
+#include <memory>
 
 class SigmoidDistortion : public ModEffect {
 private:
-    float *history;
-    int history_length;
+    Buffer<float> history;
 
 
-    float sigmoid(float inp) {
+    static float sigmoid(float inp) {
         return 1.f / (1.f + fastexpf(-1.f * inp));
     }
 
-    float integrate(float inp) {
-        float scalar = 1.f / float(history_length + 1);
-        float sum = inp * scalar;
-
-        for (int i = 0; i < history_length; i++) {
-            sum += this->history[i] * scalar;
+    float integrate() {
+        int length = int(float(this->history.length()) * this->depth);
+        if (length < 3) {
+            length = 3;
         }
 
-        return sum;
+        float sum = 0.0;
+
+        for (int i = 0; i < length; i++) {
+            sum += this->history[i] * float(length - i -1) / float(length);
+        }
+
+        return sum / float(length);
     }
 
 protected:
 
 
     float apply(float sample) {
-        return this->sigmoid(this->integrate(sample));
+        this->history.append(sample);
+        return SigmoidDistortion::sigmoid(SigmoidDistortion::sigmoid(this->integrate() * (1.f+ this->time)));
     }
 
 public:
-    SigmoidDistortion(float *history, int history_length) : history(history),
-                                                            history_length(history_length) {
-
+    SigmoidDistortion(float *history, int history_length) : history(history, history_length) {
     }
 
     void tick(const float *in, float *out, uint32_t inp_length) override {

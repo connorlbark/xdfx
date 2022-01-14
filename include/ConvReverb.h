@@ -6,7 +6,7 @@
 #define STDFX_CONVREVERB_H
 
 
-#include "Buffer.h"
+#include "utils/Buffer.h"
 #include "Reverb.h"
 #include "float_math.h"
 

@@ -5,7 +5,7 @@
 #ifndef STDFX_BUFFER_H
 #define STDFX_BUFFER_H
 
-#include "float_math.h"
+#include "../../../logue-sdk/platform/minilogue-xd/inc/utils/float_math.h"
 
 struct buf_f32pair_t : f32pair_t {
     buf_f32pair_t() : f32pair_t() {}
@@ -27,6 +27,10 @@ struct buf_f32pair_t : f32pair_t {
 
     buf_f32pair_t operator*(buf_f32pair_t b) {
         return f32pair_mul(*this, b);
+    }
+
+    buf_f32pair_t operator*(float b) {
+        return f32pair_mul(*this, f32pair(b,b));
     }
 
     buf_f32pair_t operator+(buf_f32pair_t b) {
@@ -89,12 +93,12 @@ private:
     }
 
 public:
-    explicit Buffer(F *ram, int ram_length) : ram_length_(ram_length),
+    Buffer(F *ram, int ram_length) : ram_length_(ram_length),
                                               ram_start_idx_(0), length_(0),
                                               ram_(ram) {
     }
 
-    explicit Buffer(F *ram, int ram_length, int data_length) :
+    Buffer(F *ram, int ram_length, int data_length) :
             ram_length_(ram_length),
             ram_start_idx_(0), length_(data_length),
             ram_(ram) {
@@ -130,7 +134,13 @@ public:
         this->ram_start_idx_ = new_start;
 
         // set value at end
-        this->ram_[this->l_ram_addr_(this->length_ - 1)] = newVal;
+        this->ram_[this->ram_addr_(this->length_ - 1)] = newVal;
+    }
+
+    void fill(float val) {
+        while (!this->is_full()) {
+            this->append(val);
+        }
     }
 
     F &operator[](int i) const {
@@ -159,7 +169,7 @@ public:
     void append(F val) {
         // if there is no more room, then we have to do a backward shift
         // as we cannot grow this->length_
-        if (length_ == this->max_channel_length()) {
+        if (this->is_full()) {
             this->backward_shift(val);
             return;
         }
@@ -172,7 +182,7 @@ public:
     }
 
     bool is_full() const {
-        return this->length_ >= this->max_channel_length();
+        return this->length_ >= this->ram_length_;
     }
 
     const F *raw() const {

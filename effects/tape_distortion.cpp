@@ -5,7 +5,7 @@
 #include "../include/SigmoidDistortion.h"
 #include "usermodfx.h"
 
-#define HISTLENGTH 10
+#define HISTLENGTH 30
 static __sdram float history[HISTLENGTH];
 static SigmoidDistortion distortion{history, HISTLENGTH};
 
