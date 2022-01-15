@@ -1,14 +1,10 @@
-#include "include/TapDelay.h"
-
-
+#include "include/TapDelay.hpp"
 #include "userdelfx.h"
 
-const int ram_size = 48000/2;
 //static __sdram float imp_resp_ram[RAMLENGTH];
-static __sdram float l_history[ram_size];
-static __sdram float r_history[ram_size];
+static __sdram buf_f32pair_t ram[2400];
 
-static TapDelay del{l_history, r_history, ram_size};
+static TapDelay del{ram, 2400};
 
 void DELFX_INIT(uint32_t platform, uint32_t api) {
 

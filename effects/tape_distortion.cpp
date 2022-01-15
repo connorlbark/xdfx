@@ -2,7 +2,7 @@
 // Created by Connor Barker on 10/5/21.
 //
 
-#include "../include/SigmoidDistortion.h"
+#include "../include/SigmoidDistortion.hpp"
 #include "usermodfx.h"
 
 #define HISTLENGTH 30

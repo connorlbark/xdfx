@@ -5,7 +5,7 @@
 #ifndef STDFX_ALGORITHMICREVERB_H
 #define STDFX_ALGORITHMICREVERB_H
 
-#include "utils/Buffer.h"
+#include "utils/Buffer.hpp"
 
 class HallReverb {
 private:

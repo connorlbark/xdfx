@@ -70,7 +70,7 @@ DADEFS = -DSTM32F446xE -DCORTEX_USE_FPU=TRUE -DARM_MATH_CM4
 DDEFS = -DSTM32F446xE -DCORTEX_USE_FPU=TRUE -DARM_MATH_CM4 -D__FPU_PRESENT
 
 COPT = -std=c11 -mstructure-size-boundary=8
-CXXOPT = -std=c++11 -fno-rtti -fno-exceptions -fno-non-call-exceptions
+CXXOPT = -std=c++11 -fno-rtti -fno-exceptions -fno-non-call-exceptions -fno-math-errno
 ifeq ($(EFFECT),1)
 	CXXOPT += -DCONV_REVERB_H=\"$(CONV_REVERB_PATH)\"
 endif

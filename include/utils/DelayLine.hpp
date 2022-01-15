@@ -5,30 +5,41 @@
 #ifndef STDFX_DELAYLINE_HPP
 #define STDFX_DELAYLINE_HPP
 
-#endif //STDFX_DELAYLINE_HPP
 
-#include "Node.hpp"
-#include "Buffer.h"
-#include "include/utils/control/Control.hpp"
+#include "Buffer.hpp"
+#include "Control.hpp"
 
-class DelayLine : public Node {
+class DelayLine  {
 private:
-    Buffer<buf_f32pair_t> buf;
+    Buffer buf;
     Control delay;
 
 public:
-
     DelayLine(buf_f32pair_t *ram, int ram_length, Control delay) : buf(ram, ram_length),
-                                                                                  delay(std::move(delay)) {
+                                                                                    delay(delay) {
     }
+
 
     buf_f32pair_t tick(buf_f32pair_t sample) {
         int16_t sampleDelay = this->delay.get();
 
-        buf_f32pair_t delayedSample = this->buf[sampleDelay];
+        // if there is no delay, then just return the sample; otherwise look into the buffer
+        buf_f32pair_t delayedSample = (sampleDelay == 0 ? sample : this->buf[sampleDelay-1]);
+
+        // add sample to buffer
         this->buf.prepend(sample);
 
         return delayedSample;
     }
 
+    void setDelay(Control delay) {
+        this->delay = delay;
+    }
+
+    int maxDelay() const {
+        return this->buf.length();
+    }
+
 };
+
+#endif //STDFX_DELAYLINE_HPP

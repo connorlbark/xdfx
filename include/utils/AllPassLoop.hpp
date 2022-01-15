@@ -7,13 +7,10 @@
 
 #endif //STDFX_ALLPASSLOOP_HPP
 
-#include <utility>
-
-#include "Buffer.h"
+#include "Buffer.hpp"
 #include "include/utils/control/Control.hpp"
-#include "Node.hpp"
 
-class AllPassLoop : public Node {
+class AllPassLoop  {
 private:
     Buffer<buf_f32pair_t> buf;
     Control delay;

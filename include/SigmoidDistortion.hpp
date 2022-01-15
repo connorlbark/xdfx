@@ -7,8 +7,7 @@
 
 #include "ModEffect.h"
 #include "float_math.h"
-#include "utils/Buffer.h"
-#include <memory>
+#include "utils/Buffer.hpp"
 
 class SigmoidDistortion : public ModEffect {
 private:
