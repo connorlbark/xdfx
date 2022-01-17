@@ -12,7 +12,7 @@
 
 class AllPassLoop  {
 private:
-    Buffer<buf_f32pair_t> buf;
+    Buffer<f32pair_t> buf;
     Control delay;
     float coeff;
 
